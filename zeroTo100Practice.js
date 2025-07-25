@@ -1,6 +1,6 @@
 // --- Functions & Conditionals Practice ---
 
-// 2. Write a function isAdult(age) that returns true if the age is 18 or older.
+// 1. Write a function isAdult(age) that returns true if the age is 18 or older.
 function isAdult(age) {
     if (age === 18) {
         console.log("true");
@@ -10,8 +10,7 @@ function isAdult(age) {
 }
 isAdult(188);
 
-
-// 1. Write a function isPositive(number) that returns true if the number is positive.
+// 2. Write a function isPositive(number) that returns true if the number is positive.
 function isPositive(number) {
     if(number % 2 === 0) {
         console.log("true");
@@ -20,7 +19,6 @@ function isPositive(number) {
     }
 }
 isPositive(2);
-
 
 // 3. Write a function isMultipleOfThree(n) that returns "Yes" or "No".
 function isMultipleOfThree(n) {
@@ -32,7 +30,6 @@ function isMultipleOfThree(n) {
 }
 isMultipleOfThree(8);
 
-
 //  4. Write a function checkLogin(username, password) that prints "Access granted" if username is "admin" and password is "1234", otherwise "Access denied".
 function checkLogin(username, password) {
     if (username === "admin", password === "1234") {
@@ -42,7 +39,6 @@ function checkLogin(username, password) {
     }
 }
 checkLogin("admin", "1234");
-
 
 // --- Loops & Basic Math ---
 
@@ -100,7 +96,7 @@ console.log(sumUpTo(10));
 
 // --- Let's start a new batch of 100 ---
 
-// 1. Write a function that prints numbers from 1 to 10.
+// 11. Write a function that prints numbers from 1 to 10.
 function printNums() {
     for (let i = 1; i <=10; i++) {
         console.log(i);
@@ -108,7 +104,7 @@ function printNums() {
 }
 printNums()
 
-// 2. Write a function that prints numbers 10 to 1.
+// 12. Write a function that prints numbers 10 to 1.
 function printNumsBackward() {
     for (let i = 10; i >= 1; i--) {
         console.log(i);
@@ -116,7 +112,7 @@ function printNumsBackward() {
 }
 printNumsBackward()
 
-// 3. Write a function that prints all even numbers from 1 to 20.
+// 13. Write a function that prints all even numbers from 1 to 20.
 function evenNums() {
     for (let i = 1; i <= 20; i++) {
         if (i % 2 === 0) {
@@ -126,7 +122,7 @@ function evenNums() {
 }
 evenNums();
 
-// 4. Write a function that prints all odd numbers from 1 to 20.
+// 14. Write a function that prints all odd numbers from 1 to 20.
 function oddNums() {
     for (let i = 1; i <= 20; i++) {
         if (i % 2 != 0) {
@@ -136,7 +132,7 @@ function oddNums() {
 }
 oddNums();
 
-// 5. Write a function that takes a number and prints whether it is positive or negative.
+// 15. Write a function that takes a number and prints whether it is positive or negative.
 function positiveOrNegative(n) {
     if (n >= 0) {
         console.log(n + " is positive")
@@ -146,7 +142,7 @@ function positiveOrNegative(n) {
 }
 positiveOrNegative(0.2);
 
-// 6. Write a function that prints the multiplication table of 5.
+// 16. Write a function that prints the multiplication table of 5.
 function multipleOfFive(n) {
     let counter = 1;
     let multiple = 0;
@@ -167,7 +163,7 @@ function multiplyByFive(n) {
 }
 multiplyByFive(5);
 
-// 7. Write a function that takes a number and prints its multiplication table.
+// 17. Write a function that takes a number and prints its multiplication table.
 function multiplicationTable(on, n) {
     for (let i = 1; i <= n; i++) {
         let multiple = i * on;
@@ -176,7 +172,7 @@ function multiplicationTable(on, n) {
 }
 multiplicationTable(5, 10);
 
-// 8. Write a function that returns the sum of numbers from 1 to 100.
+// 18. Write a function that returns the sum of numbers from 1 to 100.
 function returnSum() {
     let sum = 0;
     for (let i = 1; i <= 100; i++) {
@@ -186,7 +182,7 @@ function returnSum() {
 }
 console.log(returnSum());
 
-// 9. Write a function that prints the first 10 square numbers.
+// 19. Write a function that prints the first 10 square numbers.
 function squareNumbers() {
     let counter = 1;
     for (let i = 1; i <= 10; i++) {
@@ -197,7 +193,7 @@ function squareNumbers() {
 }
 squareNumbers();
 
-// 10. Write a function that prints the first 10 cube numbers.
+// 20. Write a function that prints the first 10 cube numbers.
 function cubeNumbers() {
     let counter = 1;
     for (let i = 1; i <= 10; i++) {
@@ -208,7 +204,7 @@ function cubeNumbers() {
 }
 cubeNumbers();
 
-// 11. Write a function that checks whether a number is divisible by 3.
+// 21. Write a function that checks whether a number is divisible by 3.
 function divideByThree(n) {
     if (n % 3 === 0) {
         console.log(n + " is divisible by 3");
@@ -218,7 +214,7 @@ function divideByThree(n) {
 }
 divideByThree(26);
 
-// 12. Write a function that checks whether a number is divisible by 5.
+// 22. Write a function that checks whether a number is divisible by 5.
 function divisibleByFive(n) {
     if (n % 5 === 0) {
         console.log(n + " is divisible by 5");
@@ -228,7 +224,7 @@ function divisibleByFive(n) {
 }
 divisibleByFive(20);
 
-// 13. Write a function that checks whether a number is divisible by both 3 and 5.
+// 23. Write a function that checks whether a number is divisible by both 3 and 5.
 function isDivisible(n) {
     if (n % 3 === 0 && n % 5 === 0) {
         console.log(n + " is divisible by 3 and 5");
@@ -238,7 +234,7 @@ function isDivisible(n) {
 }
 isDivisible(30);
 
-// 14. Write a function that prints "Fizz" for numbers divisible by 3, "Buzz" for numbers divisible by 5, and "FizzBuzz" for both.
+// 24. Write a function that prints "Fizz" for numbers divisible by 3, "Buzz" for numbers divisible by 5, and "FizzBuzz" for both.
 function divisibleFizzBuzz(n) {
     if (n % 3 === 0 && n % 5 === 0) {
         console.log("FizzBuzz");
@@ -252,7 +248,7 @@ function divisibleFizzBuzz(n) {
 }
 divisibleFizzBuzz(60);
 
-// 15. Write a function that prints even numbers between two values (inclusive).
+// 25. Write a function that prints even numbers between two values (inclusive).
 function evenNumbers(n, x) {
     for (let i = n; i <= x; i++) {
         if (i % 2 === 0) {
@@ -262,7 +258,7 @@ function evenNumbers(n, x) {
 }
 evenNumbers(4, 10);
 
-// 16. Write a function that prints odd numbers between two values (inclusive).
+// 26. Write a function that prints odd numbers between two values (inclusive).
 function oddNumbers(n, x) {
     for (let i = n; i <= x; i++) {
         if (i % 2 !== 0) {
@@ -272,7 +268,7 @@ function oddNumbers(n, x) {
 }
 oddNumbers(3, 11);
 
-// 17. Write a function that returns the factorial of a number.
+// 27. Write a function that returns the factorial of a number.
 function factorial(n) {
     totalFactorial = 1;
     for (let i = n; i >= 1; i--) {
@@ -282,4 +278,107 @@ function factorial(n) {
 }
 console.log(factorial(5));
 
-// 18. Write a function that prints all multiples of 4 from 1 to 100.
+// 28. Write a function that prints all multiples of 4 from 1 to 100.
+function multiplesOfFour() {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 4 === 0) {
+            console.log(i);
+        }
+    }
+}
+multiplesOfFour();
+
+// 29. Write a function that prints numbers from 100 down to 1.
+function countdown() {
+    for (let i = 100; i >= 1; i--) {
+        console.log(i);
+    }
+}
+countdown();
+
+// 30. Write a function that prints all numbers divisible by 6 up to 60.
+function divideBySix() {
+    for (let i = 1; i <= 60; i++) {
+        if (i % 6 === 0) {
+            console.log(i);
+        }
+    }
+}
+divideBySix();
+
+// 31. Write a function that prints numbers between 1 and 100 that are divisible by 7.
+function divideBySeven() {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 7 === 0) {
+            console.log(i);
+        }
+    }
+}
+divideBySeven();
+
+// 32. Write a function that prints whether numbers from 1 to 50 are even or odd.
+function oddOrEven() {
+    for (let i = 1; i <= 50; i++) {
+        if (i % 2 === 0) {
+            console.log(i + " is even");
+        } else {
+            console.log(i + " is odd");
+        }
+    }
+}
+oddOrEven()
+
+// 33. Write a function that sums all even numbers from 1 to 100.
+    // we need a storage of value
+    // check if the number is even
+    // iterate through all numbers 1 to 100
+    // add all even numbers together and store in the storage of value
+    // print the value when the calculation is complete.
+function addEvenNumbers() {
+    let total = 0
+    for (let i = 1; i <= 100; i++) {
+        if (i % 2 === 0) {
+            total = total + i;
+        }
+    }
+    return total;
+}
+console.log(addEvenNumbers());
+
+// 34. Write a function that sums all odd numbers from 1 to 100.
+function sumOddNumbers() {
+    total = 0;
+    for (let i = 1; i <= 100; i++) {
+        if (i % 2 !== 0) {
+            total += i;
+        }
+    }
+    return total;
+}
+console.log(sumOddNumbers());
+
+// 35. Write a function that prints every 3rd number from 1 to 30.
+function everyThirdNum() {
+    for (let i = 3; i <= 30; i += 3) {
+        console.log(i)
+    }
+}
+everyThirdNum();
+
+// or I can write it as follows:
+function everyThirdNumber() {
+    for (let i = 1; i <= 10; i++) {
+        console.log(i * 3);
+    }
+}
+everyThirdNumber();
+
+// 36. Write a function that checks if a number is greater than 100.
+function greaterThan(n) {
+    if (n > 100) {
+        console.log("greater than 100!");
+    } else {
+        console.log("not greater than 100.")
+    }
+}
+greaterThan(105);
