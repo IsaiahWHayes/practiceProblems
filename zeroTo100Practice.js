@@ -426,3 +426,100 @@ function negativeNums() {
     }
 }
 negativeNums();
+
+// 41. Write a function that prints the sum of all numbers from a to b .
+function aToB(a, b) {
+    let total = 0;
+    for (let i = a; i <= b; i++){
+        total = total + i;
+    }
+    return total;
+}
+console.log(aToB(1, 5));
+
+// 42. Write a function that prints the product of numbers from 1 to n .
+function numProduct (n) {
+    total = 1;
+    for (let i = 1; i <= n; i++) {
+        total = total * i;
+    }
+    return total;
+}
+console.log(numProduct(5));
+
+// 43. Write a function that counts backwards from a given number using a while loop.
+function countBackwards(n) {
+    let counter = 0;
+    while (counter <= n) {
+        console.log(n);
+        n--;
+    }
+}
+countBackwards(5);
+
+// 44. Write a function that prints numbers from 1 to n using a while loop.
+function countUp(n) {
+    let counter = 1;
+    while (counter <= n) {
+        console.log(counter);
+        counter++;
+    }
+}
+countUp(10);
+
+// 45. Write a function that prints "Hello" n times using a for loop.
+function hello(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log("hello");
+    }
+}
+hello(3);
+
+// 46. Write a function that prints "Goodbye" n times using a while loop.
+function goodbye(n) {
+    let counter = 1;
+    while (counter <= n) {
+        console.log("goodbye");
+        counter++;
+    }
+}
+goodbye(5);
+
+// 47. Write a function that prints the first n even numbers.
+function firstEvenNums(n) {
+    for (let i = 1; i <= n * 2; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+
+        }
+    }
+}
+firstEvenNums(12);
+
+// 48. Write a function that prints the first n odd numbers.
+function firstOddNums(n) {
+    for (let i = 1; i <= n * 2; i++) {
+        if (i % 2 !== 0) {
+            console.log(i);
+        }
+    }
+}
+firstOddNums(12);
+
+// 49. Write a function that prints all numbers divisible by 9 up to 90.
+function divideByNine() {
+    for (let i = 1; i <= 90; i++) {
+        if (i % 9 === 0) {
+            console.log(i);
+        }
+    }
+}
+divideByNine()
+
+// 50. Write a function that prints all multiples of 10 up to 100.
+function multiplyTen() {
+    for (let i = 1; i <= 10; i++) {
+        console.log(i * 10);
+    }
+}
+multiplyTen();
