@@ -382,3 +382,47 @@ function greaterThan(n) {
     }
 }
 greaterThan(105);
+
+// 37. Write a function that takes two numbers and prints the larger one.
+function twoNums(a, b) {
+    if (a > b) {
+        console.log(a);
+    } else {
+        console.log(b);
+    }
+}
+twoNums(4, 1);
+
+// 38. Write a function that takes two numbers and prints the smaller one.
+function twoSmallNums(a, b) {
+    if (a < b) {
+        console.log(a);
+    } else {
+        console.log(b);
+    }
+}
+twoSmallNums(4, 1);
+
+// 39. Write a function that prints numbers from n to 1 using a loop.
+function numToOne(n) {
+    if (n > 1) {
+        for (i = n; i >= 1; i--) {
+            console.log(n);
+            n -= 1;
+        }
+    } else if (n < 1) {
+        for (i = n; i <= 1; i++) {
+            console.log(n);
+            n += 1;
+        }
+    }
+}
+numToOne(-3);
+
+// 40. Write a function that prints all negative numbers from -1 to -20.
+function negativeNums() {
+    for (let i = -1; i >= -20; i--) {
+        console.log(i);
+    }
+}
+negativeNums();
