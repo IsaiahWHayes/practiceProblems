@@ -40,7 +40,39 @@ fruits.pop();
 console.log(fruits);
 
 // 7. Create an array with 3 colors. Replace the second color with 'blue'. Print the array.
-let colors = ["blue", "white", "black", "green", "brown"];
+let colors = ["white", "red", "black", "green", "brown"];
 console.log(colors);
-colors[1] = "red";
+colors[1] = "blue";
 console.log(colors);
+
+// 8. Create an array of 6 numbers. Count how many numbers are even.
+let numArray = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < numArray.length; i++) {
+    if (numArray[i] % 2 === 0) {
+        console.log(numArray[i] + " is even")
+    }
+}
+
+// 9. Create an array of words. Print the length of each word.
+let words = ["put", "it", "down"];
+for (let i = 0; i < words.length; i++) {
+    console.log(words[i].toUpperCase() + ": is " + words[i].length + " characters long");
+}
+
+// 10. Create an array of 5 numbers. Print the sum of all the numbers.
+let sumNums = [1, 2, 3, 4, 5];
+let total = 0;
+let i = 0;
+while (i < sumNums.length) {
+    total += sumNums[i];
+    i++;
+}console.log(total)
+
+// or I could have written it as:
+
+let sumNum = [1, 2, 3, 4, 5];
+let sumTotal = 0
+for (let i = 0; i < sumNum.length; i++) {
+    sumTotal += sumNum[i];
+}
+console.log(sumTotal);
