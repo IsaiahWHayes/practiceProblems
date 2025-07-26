@@ -32,3 +32,15 @@ for (let i = 0; i < favSongs.length; i++){
     console.log("Song " + counter + " is: " + favSongs[i]);
     counter++;
 }
+
+// 6. Create an array of fruits and remove the last one using .pop(). Print the updated array.
+let fruits = ["orange", "plum", "blackberry", "apple"];
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+
+// 7. Create an array with 3 colors. Replace the second color with 'blue'. Print the array.
+let colors = ["blue", "white", "black", "green", "brown"];
+console.log(colors);
+colors[1] = "red";
+console.log(colors);
