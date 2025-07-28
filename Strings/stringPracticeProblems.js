@@ -173,20 +173,41 @@
 // // referece the same sunshine variable from above...
 // console.log(sunshine.lastIndexOf("n"));
 
-// 27. Create a string "avocado". Use .includes() to check if it contains "cat".
-let avocado = "avocado";
-console.log(avocado.includes("cat"));
+// // 27. Create a string "avocado". Use .includes() to check if it contains "cat".
+// let avocado = "avocado";
+// console.log(avocado.includes("cat"));
 
-// 28. Create a string "I like bananas". Use .replace() to replace "bananas" with "apples".
-let bananas = "I like bananas";
-let bananasToApples = bananas.replace("bananas", "apples");
-console.log(bananasToApples);
+// // 28. Create a string "I like bananas". Use .replace() to replace "bananas" with "apples".
+// let bananas = "I like bananas";
+// let bananasToApples = bananas.replace("bananas", "apples");
+// console.log(bananasToApples);
 
-// 29. Create a string "I like tea and cookies". Use .replaceAll() to change all spaces into dashes.
-let englishMan = "I like tea and cookies";
-let oldEnglishMan = englishMan.replaceAll(" ", "-");
-console.log(oldEnglishMan);
+// // 29. Create a string "I like tea and cookies". Use .replaceAll() to change all spaces into dashes.
+// let englishMan = "I like tea and cookies";
+// let oldEnglishMan = englishMan.replaceAll(" ", "-");
+// console.log(oldEnglishMan);
 
-// 30. Create a string "pineapple". Use .slice() to print just "apple".
-let pineapple = "pineapple";
-console.log(pineapple.slice(4));
+// // 30. Create a string "pineapple". Use .slice() to print just "apple".
+// let pineapple = "pineapple";
+// console.log(pineapple.slice(4));
+
+// 31. Create a string "racecar". Use .charAt() to print the 2nd letter.
+let racecar = "racecar";
+console.log(racecar.charAt(1));
+
+// 32. Create a string "racecar". Use bracket notation ([]) to print the 2nd letter.
+// using the same racecar variable from above:
+console.log(racecar[1]);
+
+// 33. Create a string " too many spaces ". Use .trim() to remove the extra spaces and print the result.
+let spacesMany = " too many spaces ";
+spacesNone = spacesMany.trim(" ");
+console.log(spacesNone);
+
+// 34. Create a string "The sky is blue". Use .endsWith() to check if it ends in "blue".
+let blueSky = "The sky is blue";
+console.log(blueSky.endsWith("blue"));
+
+// 35. Create a string "The sky is blue". Use .startsWith() to check if it starts with "The".
+// using the same blueSky variable from above...
+console.log(blueSky.startsWith("The"));
