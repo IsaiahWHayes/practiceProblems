@@ -131,40 +131,62 @@
 // }
 // console.log(counter);
 
-// 21. Create a string "javascript is fun". Use .toUpperCase() to print it in all caps.
-let newString = "javascript is fun";
-console.log(newString.toUpperCase());
+// // 21. Create a string "javascript is fun". Use .toUpperCase() to print it in all caps.
+// let javascriptString = "javascript is fun";
+// console.log(javascriptString.toUpperCase());
 
-// 22. Create a string "LEARN CODING". Use .toLowerCase() to print it in all lowercase.
-let learnCoding = "LEARN CODING";
-console.log(learnCoding.toLowerCase());
+// // 22. Create a string "LEARN CODING". Use .toLowerCase() to print it in all lowercase.
+// let learnCoding = "LEARN CODING";
+// console.log(learnCoding.toLowerCase());
 
-// 23. Create a string "backpack". Print the character at index 4.
-let backpack = "backpack";
-console.log(backpack.charAt(4));
+// // 23. Create a string "backpack". Print the character at index 4.
+// let backpack = "backpack";
+// console.log(backpack.charAt(4));
 
-// 24. Create a string "backpack". Print the last character of the string using .length.
-let newBackpack = "backpack";
-for (let i = 0; i < newBackpack.length; i++) {
-    if (i === newBackpack.length - 1) {
-        console.log(newBackpack[i]);
-    }
-}
+// // 24. Create a string "backpack". Print the last character of the string using .length.
+// let newBackpack = "backpack";
+// for (let i = 0; i < newBackpack.length; i++) {
+//     if (i === newBackpack.length - 1) {
+//         console.log(newBackpack[i]);
+//     }
+// }
 
-// or I could have written it on a single line as:
+// // or I could have written it on a single line as:
 
-console.log(newBackpack[newBackpack.length - 1]);
+// console.log(newBackpack[newBackpack.length - 1]);
 
-// 25. Create a string "sunshine". Use .indexOf() to find the index of "s".
-let sunshine = "sunshine";
-console.log(sunshine.indexOf("s"));
+// // 25. Create a string "sunshine". Use .indexOf() to find the index of "s".
+// let sunshine = "sunshine";
+// console.log(sunshine.indexOf("s"));
 
-// or to find the index of all "s" characters, I'd do the following:
+// // or to find the index of all "s" characters, I'd do the following:
 
-// use the same sunshine variable from above, then...
-let letter = "s";
-for (i = 0; i < sunshine.length; i++) {
-    if (sunshine[i] === letter) {
-        console.log(i)
-    }
-}
+// // use the same sunshine variable from above, then...
+// let letter = "s";
+// for (i = 0; i < sunshine.length; i++) {
+//     if (sunshine[i] === letter) {
+//         console.log(i)
+//     }
+// }
+
+// // 26. Create a string "sunshine". Use .lastIndexOf() to find the last index of "n".
+// // referece the same sunshine variable from above...
+// console.log(sunshine.lastIndexOf("n"));
+
+// 27. Create a string "avocado". Use .includes() to check if it contains "cat".
+let avocado = "avocado";
+console.log(avocado.includes("cat"));
+
+// 28. Create a string "I like bananas". Use .replace() to replace "bananas" with "apples".
+let bananas = "I like bananas";
+let bananasToApples = bananas.replace("bananas", "apples");
+console.log(bananasToApples);
+
+// 29. Create a string "I like tea and cookies". Use .replaceAll() to change all spaces into dashes.
+let englishMan = "I like tea and cookies";
+let oldEnglishMan = englishMan.replaceAll(" ", "-");
+console.log(oldEnglishMan);
+
+// 30. Create a string "pineapple". Use .slice() to print just "apple".
+let pineapple = "pineapple";
+console.log(pineapple.slice(4));
