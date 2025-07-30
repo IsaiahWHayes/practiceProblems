@@ -100,3 +100,64 @@ function keyValue(object, key) {
     }
 }
 console.log(keyValue(blanket, "fabric"));
+
+// 11. Create an array of objects representing students. Print the name of each student.
+let students = [
+    student1 = {
+        name: "Isaiah",
+        age: 16,
+        gender: "male"
+    },
+    student2 = {
+        name: "Ethan",
+        age: 14,
+        gender: "male"
+    },
+    student3 = {
+        name: "Myla",
+        age: 15,
+        gender: "female"
+    }
+]
+for (i = 0; i < students.length; i++) {
+    console.log(students[i]["name"]);
+}
+
+// 12. Add a new object to an existing array of objects.
+students.push(
+    student4 = {
+        name: "Naomi",
+        age: 13,
+        gender: "female"
+    }
+)
+console.log(students);
+
+// 13. Create an object where one property is an array. Access a value from the array.
+let car = {
+    make: "Mercedes",
+    model: "S550",
+    color: "White",
+    wheels: ["black", "AMG spoke rims", "20 inch rims"]
+}
+console.log(car.wheels[0]);
+
+// 14. Modify an element inside an array that's stored in an object.
+    // using the same object from above...
+car.wheels[2] = "18 inch rims"
+console.log(car);
+
+// 15. Write a function that checks if a property exists in an object.
+let computer = {
+    make: "Apple",
+    model: "Macbook Air",
+    color: "Midnight"
+}
+function propInObj(object, property) {
+    if (property in object) {
+        console.log("true")
+    } else {
+        console.log("that property does not exist");
+    }
+}
+propInObj(computer, "model");
