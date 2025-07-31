@@ -76,7 +76,7 @@ let blanket = {
     color: "grey"
 }
 for (let key in blanket) {
-    console.log(blanket[key]);
+    console.log(key + ": " + blanket[key]);
 }
 
 // 9. Count the number of properties in an object.
@@ -161,3 +161,35 @@ function propInObj(object, property) {
     }
 }
 propInObj(computer, "model");
+
+// 16. Create an object and print all the keys using Object.keys().
+let ethan = {
+    name: "Ethan",
+    age: "14 months",
+    gender: "Male"
+}
+console.log(Object.keys(ethan));
+
+// 17. Create an object and print all the values using Object.values().
+let sweater = {
+    make: "Banana Republic",
+    fabric: "Cashmere",
+    color: "Cream"
+}
+console.log(Object.values(sweater));
+
+// 18. Merge two objects into one using the spread operator.
+    // using the same two objects from above (ethan and sweater):
+ethanAndSweater = {...ethan, ...sweater};
+console.log(ethanAndSweater);
+
+// 19. Convert an object to an array of [key, value] pairs using Object.entries().
+console.log(Object.entries(sweater));
+
+// 20. Write a function that accepts an object and returns a formatted string with all key-value pairs.
+function keyAndValue(object) {
+    for (key in object) {
+        console.log(key + ", " + object[key]);
+    }
+}
+keyAndValue(sweater);
