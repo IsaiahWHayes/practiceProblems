@@ -69,7 +69,7 @@ let user = [
     {name: "Isaiah", email: "testemail@gmail.com", password: "somethingprivate"},
     {name: "Tiffany", email: "testemail2@gmail.com", password: "somethingprivate2"},
     {name: "Ethan", email: "testemail3@gmail.com", password: "somethingprivate3"},
-    {name: "Myla"}
+    {name: "Myla", email: null, password: null}
 ]
 
 for (let i = 0; i < user.length; i++) {
@@ -117,11 +117,60 @@ let movies = [
     {name: "Million Dollor Distributor", rating: "R", category: "Documentary"}
 ]
 function movieRating(movieTitle) {
-    for (i = 0; i < movieTitle.length; i++) {
+    for (let i = 0; i < movieTitle.length; i++) {
         if (movieTitle[i].rating === "PG-13" || movieTitle[i].rating === "R") {
         console.log(`"${movieTitle[i].name}" is rated: ${movieTitle[i].rating}`);
         }
     }
 }
-
 movieRating(movies);
+
+// 8. Create an array of book objects. Print titles of books with more than 300 pages.
+let books = [
+    {title: "AI Engineering", author: "Chip Huyen", pages: 500},
+    {title: "Medical Apartheid", author: "Harriet Washington", pages: 412},
+    {title: "Charlotte's Webb", author: "E.B. White", pages: 184}
+]
+function numOfPages(bookPages) {
+    let results = [];
+    for (let i = 0; i < bookPages.length; i++) {
+        if (bookPages[i].pages > 300) {
+            results.push(`"${bookPages[i].title}" is ${bookPages[i].pages} pages long`);
+        }
+    } return results;
+}
+console.log(numOfPages(books).join("\n"));
+
+// 9. Loop through an array of product objects. Print 'On Sale' for items with a discount property.
+let products = [
+    {item: "iWatch", price: 500, discount: 450},
+    {item: "iPhone", price: 1200, discount: null},
+    {item: "MacBook Air", price: 999, discount: 850}
+]
+function discountItems(product) {
+    let results = []
+    for (let i = 0; i < product.length; i++) {
+        if (product[i].discount) {
+            results.push(product[i].item);
+        }
+    } return results;
+}
+console.log(discountItems(products).join("\n"));
+
+// 10. Create a function that returns 'Access granted' if user.role is 'admin', otherwise 'Access denied'.
+let userAccounts = [
+    {username: "Isaiah", role: "admin"},
+    {username: "Myla", role: "admin"},
+    {username: "Ethan", role: "user"}
+]
+function adminRole(userRole) {
+    let results = [];
+    for (let i = 0; i < userRole.length; i++) {
+        if (userRole[i].role === "admin") {
+            results.push(`${userRole[i].username}: Access granted`);
+        } else {
+            results.push(`${userRole[i].username}: Access denied`);
+        }
+    } return results;
+}
+console.log(adminRole(userAccounts).join("\n"));
